@@ -27,7 +27,7 @@ module.exports = {
             data.store.posts[req.params.postId].comments = []
         let obj = { text: req.body.text }
         data.store.posts[req.params.postId].comments.push(obj)
-        res.Status(201).json(obj)
+        res.status(201).json(obj)
     },
     updateComment(req, res) {
         //console.log("Update Comment", req.params.postId, req.params.commentId, req.body)

@@ -17,7 +17,7 @@ module.exports = {
             text: req.body.text
         }
         data.store.posts.push(obj)
-        res.Status(201).json(obj)
+        res.status(201).json(obj)
     },
     updatePost(req, res) {
         //console.log("Update Post", req.params.postId, req.body)
